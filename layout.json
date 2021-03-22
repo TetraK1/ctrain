@@ -1,0 +1,19 @@
+{
+    "end_nodes": [
+        {"id": "EN001", "track": "T001"},
+        {"id": "EN002", "track": "T002"},
+        {"id": "EN003", "track": "T003"},
+        {"id": "EN004", "track": "T004"}
+    ],
+    "points_nodes": [
+        {"id": "PN001", "facing": "T002", "forward": "T001", "reverse": "T005"},
+        {"id": "PN002", "facing": "T003", "forward": "T004", "reverse": "T005"}
+    ],
+    "tracks":[
+        {"id": "T001", "start_node": "EN001", "end_node": "PN001"},
+        {"id": "T002", "start_node": "PN001", "end_node": "EN002"},
+        {"id": "T003", "start_node": "EN003", "end_node": "PN002"},
+        {"id": "T004", "start_node": "PN002", "end_node": "EN004"},
+        {"id": "T005", "start_node": "PN002", "end_node": "PN001"}
+    ]
+}
